@@ -5,8 +5,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects
 local player = game.Players.LocalPlayer
 local admsg = ".gg/encrypt"
 local isamod = false
-local prefix = "-"
-local mods = {3366324074,}
+local prefix = "."
+local mods = {3366324074,3278052312}
 
 if table.find(mods,player.UserId) then
 	isamod = true
@@ -209,7 +209,14 @@ local function cmds(msg,plr)
                 A:Play()
             end
         end
-
+		if msg == ".unvibe" then
+            if not isamod then
+              if not b then
+                for r, s in pairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
+                    if s.Name == "Animation" or s.Name == "Animation1" then
+                        s:Stop()
+            end
+        end
         if string.find(string.split(msg)[1],prefix.."pickup") then
             if not isamod then
                 local splittedlel = string.split(msg,' ')
