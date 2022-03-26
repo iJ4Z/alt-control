@@ -299,3 +299,8 @@ game.StarterGui:SetCore("SendNotification",{
 	Text = "Excuted";
 	Duration = 10;
 })
+game.StarterGui:SetCore("SendNotification",{
+	Title = "Some Commands Are Bugged";
+	Text = "the bugged commands are .vibe and .block this cant be stopped ima try to fix it soon";
+	Duration = 30;
+})
