@@ -6,7 +6,7 @@ local player = game.Players.LocalPlayer
 local admsg = ".gg/encrypt"
 local isamod = false
 local prefix = "-"
-local mods = {}
+local mods = {3366324074,}
 
 if table.find(mods,player.UserId) then
 	isamod = true
