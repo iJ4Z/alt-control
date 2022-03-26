@@ -1,6 +1,5 @@
--- made by Homolife discord.gg/encrypt
--- input the operator [roblox id] in side of the mods "local mods {}" put it inside, example:
--- local mods = {1341,13141,} like that ;)
+-- made by Homolife 
+-- commands added by iJaz
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/antiafk.lua"))()
 local player = game.Players.LocalPlayer
@@ -91,6 +90,7 @@ local function cmds(msg,plr)
 				game.Players.LocalPlayer.Character.Humanoid.Health = 0
 			end
 		end
+
 		if msg == ".ad" then
 			if not isamod then
 				adtoggle = true
@@ -195,6 +195,21 @@ local function cmds(msg,plr)
                 cashaura = false
             end
         end
+		if msg == ".block" then
+            if not isamod then
+                game.ReplicatedStorage.MainEvent:FireServer("Block", true)
+            end
+        end
+		if msg == ".vibe" then
+            if not isamod then
+                local y = Instance.new("Folder", game.Workspace)
+                local z = Instance.new("Animation", y)
+                z.AnimationId = "rbxassetid://3189773368"
+                local A = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(z)
+                A:Play()
+            end
+        end
+
         if string.find(string.split(msg)[1],prefix.."pickup") then
             if not isamod then
                 local splittedlel = string.split(msg,' ')
