@@ -3,7 +3,7 @@
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/antiafk.lua"))()
 local player = game.Players.LocalPlayer
-local admsg = ".gg/encrypt"
+local admsg = "test"
 local isamod = false
 local prefix = "."
 local mods = {3366324074,3278052312}
