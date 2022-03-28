@@ -1,12 +1,13 @@
--- made by Homolife 
--- commands added by iJaz
+-- made by Homolife discord.gg/encrypt
+-- input the operator [roblox id] in side of the mods "local mods {}" put it inside, example:
+-- local mods = {1341,13141,} like that ;)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/antiafk.lua"))()
 local player = game.Players.LocalPlayer
-local admsg = "test"
+local admsg = "JAZ'S ALT CONTROL ON TOP"
 local isamod = false
-local prefix = "."
-local mods = {3366324074,3278052312}
+local prefix = ".'
+local mods = {3278052312,3399224832,}
 
 if table.find(mods,player.UserId) then
 	isamod = true
@@ -90,7 +91,6 @@ local function cmds(msg,plr)
 				game.Players.LocalPlayer.Character.Humanoid.Health = 0
 			end
 		end
-
 		if msg == ".ad" then
 			if not isamod then
 				adtoggle = true
@@ -195,28 +195,6 @@ local function cmds(msg,plr)
                 cashaura = false
             end
         end
-		if msg == ".block" then
-            if not isamod then
-                game.ReplicatedStorage.MainEvent:FireServer("Block", true)
-            end
-        end
-		if msg == ".vibe" then
-            if not isamod then
-                local y = Instance.new("Folder", game.Workspace)
-                local z = Instance.new("Animation", y)
-                z.AnimationId = "rbxassetid://3189773368"
-                local A = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(z)
-                A:Play()
-            end
-        end
-		if msg == ".unvibe" then
-            if not isamod then
-              if not b then
-                for r, s in pairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
-                    if s.Name == "Animation" or s.Name == "Animation1" then
-                        s:Stop()
-            end
-        end
         if string.find(string.split(msg)[1],prefix.."pickup") then
             if not isamod then
                 local splittedlel = string.split(msg,' ')
@@ -302,12 +280,7 @@ end
 gfx_lowered()
 
 game.StarterGui:SetCore("SendNotification",{
-	Title = "iGartic Alt Control";
+	Title = "Controll Script!";
 	Text = "Excuted";
 	Duration = 10;
-})
-game.StarterGui:SetCore("SendNotification",{
-	Title = "Some Commands Are Bugged";
-	Text = "the bugged commands are .vibe and .block this cant be stopped ima try to fix it soon";
-	Duration = 30;
 })
